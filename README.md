@@ -28,7 +28,7 @@
     
         GET http://localhost:80/stats?state= -- enter a 2-letter abbreviation of a US state (i.e. ca for California) as a value of the "state" query parameter to get the data about the state covid stats from the external API, and an id of the document that has been saved to db with this data;
         
-        GET http://localhost:80/stats/all -- fetch all saved entries from database (all previous requests);
+        GET http://localhost:80/stats/all -- fetch all saved entries from database (all previous requests). Add limit and/or skip request parameters for pagination (i.e. ?limit=5&skip=1);
         
         GET http://localhost:80/stats/:id -- fetch a specific document by its ID (paste the ID instead of ":id");
         
